@@ -2,8 +2,8 @@ import React from 'react';
 
 import './index.css';
 
-function Post() {
-  return <article></article>;
+function Post({postTitle, postAuthor, postText}) {
+  return <article>{postTitle} {postAuthor} {postText} </article>;
 }
 
 export default Post;
