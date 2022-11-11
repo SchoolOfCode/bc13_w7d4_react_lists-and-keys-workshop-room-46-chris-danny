@@ -2,3 +2,34 @@
   border: 10px solid fuchsia;
   width: 50vw;
 }
+
+.image {
+
+  width: 30vh;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.pigeonContainer{
+  height: 15%;
+}
+
+
+
+article{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  padding: 5%;
+  border: 60px black;
+  
+}
+
+h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+

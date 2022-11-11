@@ -8,17 +8,28 @@ import Post from '../Post';
 
 function Main() {
   const [posts, setPosts] = useState(samplePosts);
+
 console.log(posts)
+
   return <main id="main">
-   {posts.map((postObject)=>{
+   {posts.map(
+    (post)=> {
      return <Post
-    postTitle = {postObject.title} 
-    postAuthor = {postObject.author}
-    postText={postObject.text} 
-    key={postObject.postId}
-     />;
+    key = {post.postId}
+    title = {post.title} 
+    author = {post.author}
+    text = {post.text}
+    date = {post.date}
+    highlights = {post.highlights.map((item, index) => {
+      return <li key={index}>{item}</li>
+    })}
+
+      image = {post.image}
+      />
+    }
     
-   })}
+    
+   )}
   </main>;
 }
 
